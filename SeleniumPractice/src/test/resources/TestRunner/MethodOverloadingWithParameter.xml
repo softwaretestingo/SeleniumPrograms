@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<parameter name="name" value="Testing"></parameter>
+		<parameter name="name1" value="SoftwareTestingO"></parameter>
+		<parameter name="age" value="2023"></parameter>
+		<classes>
+			<class name="com.softwaretestingo.testng.overloading.MethodOverloadingWithParameter" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
