@@ -19,7 +19,6 @@ public class SelectRadioBtn
 		
 		//Select Selenium Courses
 		course.get(3).click();
-		
 		Thread.sleep(3000);
 		driver.close();
 	}

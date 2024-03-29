@@ -4,8 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 public class CustomXpathParent 
 {
-	// /..-->> Represent Immediate Parent
-	// /parent::<tagname> -->> Switch to Immediate or Respected Parent
+	/*
+	 * Selects the parent of the current node. 
+	 * 
+	 * ..-->> Represent Immediate Parent
+	 * parent::<tagname> -->> Switch to Immediate or Respected Parent
+	 */
 	public static void main(String[] args) throws InterruptedException 
 	{
 		WebDriver driver=new ChromeDriver();

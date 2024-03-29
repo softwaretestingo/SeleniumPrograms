@@ -14,7 +14,8 @@ public class NewTab
 		
 		//Open a New Blank Tab [Introduced  in Selenium 4]
 		driver.switchTo().newWindow(WindowType.TAB);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
+		driver.get("https://www.google.com");
 		String newTabTitle=driver.getTitle();
 		System.out.println("Title: "+newTabTitle);
 		driver.quit();

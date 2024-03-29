@@ -10,7 +10,7 @@ public class EnableDisableTextBox
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.softwaretestingo.com/disabled-field-button/");
-
+		Thread.sleep(3000);
 		//Checking The Status of The Text Box
 		boolean fbefore = driver.findElement(By.id("lname")).isEnabled();
 		System.out.println("Before : Text box enabled status is : "+fbefore);

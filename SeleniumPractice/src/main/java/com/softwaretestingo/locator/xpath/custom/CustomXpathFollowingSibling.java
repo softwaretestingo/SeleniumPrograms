@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 public class CustomXpathFollowingSibling 
 {
+	/* Selects all following siblings of the current node. */
 	public static void main(String[] args) throws InterruptedException 
 	{
 		WebDriver driver=new ChromeDriver();
