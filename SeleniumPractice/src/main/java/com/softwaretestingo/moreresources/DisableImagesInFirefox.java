@@ -25,7 +25,6 @@ public class DisableImagesInFirefox
 		disableImagesInChromeMethodOne();
 		Thread.sleep(5000);
 		disableImagesInChromeMethodTwo();
-
 	}
 	// CHROME METHOD 1
 	private static void disableImagesInChromeMethodOne() throws InterruptedException 

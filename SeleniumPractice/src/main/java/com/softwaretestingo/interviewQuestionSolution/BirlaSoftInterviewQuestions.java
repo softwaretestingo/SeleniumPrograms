@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 public class BirlaSoftInterviewQuestions 
 {
 	/*
@@ -30,7 +29,6 @@ public class BirlaSoftInterviewQuestions
 
 		driver.findElement(By.xpath("//span[contains(text(),'Electronics')]")).click();
 		
-		
 		//print logo title.
 		WebElement a=  driver.findElement(By.xpath("//span[contains(text(),'Electronics')]/ancestor::div//div/a/picture"));
 		System.out.println(a);
@@ -45,9 +43,11 @@ public class BirlaSoftInterviewQuestions
 		Thread.sleep(2000);
 		List<WebElement> li = driver.findElements(By.xpath("//input[@placeholder='Search for Products, Brands and More']/parent::div/parent::div/following-sibling::ul/li/div/a"));
 		//Thread.sleep(5000);
-		for(WebElement we : li) {
+		for(WebElement we : li) 
+		{
 			//System.out.println(we.getAttribute("href"));
-			if(we.getAttribute("href").contains("iphone+15+pro")) {
+			if(we.getAttribute("href").contains("iphone+15+pro")) 
+			{
 				System.out.println(we.getAttribute("href"));
 				ww.until(ExpectedConditions.elementToBeClickable(we)).click();
 				break;

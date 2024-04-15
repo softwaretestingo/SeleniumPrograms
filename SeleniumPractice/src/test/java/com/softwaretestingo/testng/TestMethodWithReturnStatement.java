@@ -9,7 +9,6 @@ public class TestMethodWithReturnStatement
 		System.out.println("Returning Method");
 		return "SoftwareTestingo";
 	}
-
 	@Test
 	public void normalMethod()
 	{

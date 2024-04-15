@@ -1,26 +1,19 @@
 package com.softwaretestingo.selectdropdown;
-
 import java.util.List;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-
-public class HandleBootStrapDropdown {
-
-	public static void main(String[] args) throws InterruptedException {
+public class HandleBootStrapDropdown 
+{
+	public static void main(String[] args) throws InterruptedException 
+	{
 		String url = "https://primeng.org/dropdown";
 		WebElement dropDown;
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
 		//driver.findElement(By.xpath("//span[contains(text(),'Ok, Got it')]")).click();
-	
-
 		dropDown = driver.findElement(By.xpath("(//div[@class='p-dropdown-trigger'])[1]"));
 		dropDown.click();
 		Thread.sleep(3000);
@@ -30,7 +23,5 @@ public class HandleBootStrapDropdown {
 			System.out.println(value.getText());
 		}
 		driver.quit();
-
 	}
-
 }

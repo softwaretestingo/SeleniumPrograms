@@ -1,5 +1,4 @@
 package com.softwaretestingo.differentelementhadle;
-import org.asynchttpclient.util.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,13 +12,10 @@ public class CopyPasteDisabledTextBox
 		driver.get("https://demo.softwaretestingo.com/copy-paste-disabled-textbox/");
 		Thread.sleep(2000);
 		
-		
-
 		// Verify input box is copy disabled
 		WebElement txtBoxAccountNumber = driver.findElement(By.name("ReceiveNo"));
 		txtBoxAccountNumber.sendKeys("SoftwareTestingo");
-		
-		
+				
 		String onCopyVal = txtBoxAccountNumber.getAttribute("oncopy");
 		System.out.println("On copy value = "+onCopyVal);
 		

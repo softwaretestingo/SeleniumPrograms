@@ -17,7 +17,6 @@ public class ImplicitWait
 		
 		// From Selenium 4 Onwards 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
 		driver.get("https://demo.softwaretestingo.com/text-box/");
 		
 		driver.findElement(By.name("fullName")).sendKeys("SoftwareTestingO");

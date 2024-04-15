@@ -2,9 +2,10 @@ package com.softwaretestingo.ssl;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-public class SSLCertificateValidate {
-	public static void main(String[] args) throws InterruptedException {
-
+public class SSLCertificateValidate 
+{
+	public static void main(String[] args) throws InterruptedException 
+	{
 		// Create instance of ChromeOptions Class
 		ChromeOptions handlingSSL = new ChromeOptions();
 
@@ -18,5 +19,4 @@ public class SSLCertificateValidate {
 		Thread.sleep(3000);
 		driver.quit();
 	}
-
 }

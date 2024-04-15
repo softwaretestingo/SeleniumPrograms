@@ -18,13 +18,11 @@ public class HandleSVGElements
 		List<WebElement> stateList=driver.findElements(By.xpath(SVGPath));
 		System.out.println("Total Number Of States: "+stateList.size());
 		
-		
 		for(WebElement state:stateList)
 		{
 			String stateName = state.getAttribute("name");
 			System.out.println(stateName);
 		}
-		
 		driver.close();
 	}
 }

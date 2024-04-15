@@ -18,13 +18,9 @@ public class SendKeys
 		By lastName=By.id("input-lastname");
 		By btnContinue=By.xpath("//[@class='btn btn-primary']");
 
-
-
-
 		Actions act=new Actions(driver);
 		act.sendKeys(driver.findElement(firstName), "SoftwareTestingO").build().perform();
 		act.sendKeys(driver.findElement(lastName), "Blog").build().perform();
 		act.click(driver.findElement(btnContinue)).build().perform();
-
 	}
 }

@@ -14,6 +14,5 @@ public class ExplicitWait
 		
 		// Explicit Wait two Types - WebDriverWait & Fluent Wait
 		driver.close();
-
 	}
 }

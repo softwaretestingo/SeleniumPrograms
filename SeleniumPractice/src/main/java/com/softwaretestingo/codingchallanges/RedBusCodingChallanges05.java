@@ -1,5 +1,4 @@
 package com.softwaretestingo.codingchallanges;
-
 import java.time.Duration;
 import java.time.Month;
 import java.time.Year;
@@ -7,7 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,12 +14,13 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-public class RedBusCodingChallanges05 {
+public class RedBusCodingChallanges05 
+{
 	static WebDriver driver;
 	static WebDriverWait wait;
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception 
+	{
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("--disable-notifications");
 		driver = new ChromeDriver(option);
@@ -35,14 +34,16 @@ public class RedBusCodingChallanges05 {
 
 		System.out.println("Weekend Dates are : " + weekendDates);
 		driver.quit();
-
 	}
 
-	static List<String> getWeekEndDates(String givenMonthYear) throws Exception {
-
-		try {
+	static List<String> getWeekEndDates(String givenMonthYear) throws Exception 
+	{
+		try 
+		{
 			isInputDateValid(givenMonthYear);
-		} catch (Exception e) {
+		} 
+		catch (Exception e) 
+		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			driver.close();
@@ -54,7 +55,8 @@ public class RedBusCodingChallanges05 {
 		WebElement monthAndYearElement = driver
 				.findElement(By.cssSelector("div[class^='DayNavigator'] div:nth-child(2)"));
 
-		if (!monthAndYearElement.getText().contains(givenMonthYear)) {
+		if (!monthAndYearElement.getText().contains(givenMonthYear)) 
+		{
 			System.out.println(monthAndYearElement.getText().split("\\r?\\n")[0]);
 			printHoliday();
 			System.out.println("-----------------------");
@@ -62,7 +64,8 @@ public class RedBusCodingChallanges05 {
 			nextArrow.click();
 		}
 
-		while (!monthAndYearElement.getText().contains(givenMonthYear)) {
+		while (!monthAndYearElement.getText().contains(givenMonthYear)) 
+		{
 			monthAndYearElement = driver.findElement(By.cssSelector("div[class^='DayNavigator'] div:nth-child(2)"));
 			System.out.println(monthAndYearElement.getText().split("\\r?\\n")[0]);
 			printHoliday();
@@ -72,7 +75,6 @@ public class RedBusCodingChallanges05 {
 
 			Actions a = new Actions(driver);
 			a.moveToElement(nextArrow).click().perform();
-
 		}
 		printHoliday();
 
@@ -80,8 +82,8 @@ public class RedBusCodingChallanges05 {
 				"div[class^='DayTiles_']  span:not([class$='hVMWpe'], [class$='dkWAbH'], [class$='gigHYE'])"));
 
 		List<String> weekendDates = new ArrayList<>();
-
-		for (WebElement weekend : weekends) {
+		for (WebElement weekend : weekends) 
+		{
 			weekendDates.add(weekend.getText());
 		}
 
@@ -93,34 +95,38 @@ public class RedBusCodingChallanges05 {
 		return weekendDates;
 	}
 
-	static void isInputDateValid(String givenDateString) throws Exception {
-
+	static void isInputDateValid(String givenDateString) throws Exception 
+	{
 		Month currentMonth = java.time.LocalDate.now().getMonth();
 
 		Map<String, Month> monthMap = new HashMap<>();
-		for (Month month : Month.values()) {
+		for (Month month : Month.values()) 
+		{
 			monthMap.put(month.name().substring(0, 3).toUpperCase(), month);
 		}
 
 		Month inputMonth = monthMap.get(givenDateString.split(" ")[0].toUpperCase());
-
 		Year currentYear = Year.now();
 		Year inputYear = Year.parse(givenDateString.split(" ")[1]);
 
-		if (inputYear.compareTo(currentYear) < 0) {
+		if (inputYear.compareTo(currentYear) < 0) 
+		{
 			System.out.println("Given Date is past. Please enter future/current date");
 			throw new Exception();
-		} else if (inputYear.compareTo(currentYear) == 0 && inputMonth.compareTo(currentMonth) < 0) {
+		} 
+		else if (inputYear.compareTo(currentYear) == 0 && inputMonth.compareTo(currentMonth) < 0) 
+		{
 			System.out.println("Given Date is past. Please enter future/current date");
 			throw new Exception();
 		}
-
 	}
 
-	static void printHoliday() {
+	static void printHoliday() 
+	{
 		List<WebElement> holidayCount = driver.findElements(By.cssSelector("div[class='holiday_count']"));
 		String holidayCountString = "No Holidays in this Month";
-		if (!holidayCount.isEmpty()) {
+		if (!holidayCount.isEmpty()) 
+		{
 			holidayCountString = holidayCount.get(0).getText();
 		}
 		System.out.println("No. of holidays (excluding weekends) : " + holidayCountString);

@@ -19,7 +19,6 @@ public class NormalizeSpaceWithAttributeAndContains
 		{
 			System.out.println(texts.get(i).getText());
 		}
-		
 		driver.close();
 	}
 }

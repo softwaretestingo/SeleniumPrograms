@@ -14,7 +14,6 @@ public class ParalleExecutionTest
 		Thread.sleep(3000);
 		driver.quit();
 	}
-	
 	@Test
 	public void openFirefox() throws InterruptedException
 	{
@@ -23,7 +22,6 @@ public class ParalleExecutionTest
 		Thread.sleep(3000);
 		driver.quit();
 	}
-	
 	@Test
 	public void openEdge() throws InterruptedException
 	{

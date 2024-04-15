@@ -24,7 +24,6 @@ public class MultiSelectValues
 		select.selectByVisibleText("Performance Testing");
 		select.selectByIndex(1);
 		
-		
 		//Get First Selected Element
 		WebElement firstElement= select.getFirstSelectedOption();
 		System.out.println(firstElement.getText());

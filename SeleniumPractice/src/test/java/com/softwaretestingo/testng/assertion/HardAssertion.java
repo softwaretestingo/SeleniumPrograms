@@ -4,7 +4,6 @@ import org.testng.annotations.Test;
 public class HardAssertion 
 {
 	String className = "HardAssertion";
-
 	@Test
 	public void test_UsingHardAssertion() 
 	{

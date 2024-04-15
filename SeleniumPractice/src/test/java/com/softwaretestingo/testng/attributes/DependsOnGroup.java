@@ -1,7 +1,5 @@
 package com.softwaretestingo.testng.attributes;
-
 import org.testng.annotations.Test;
-
 public class DependsOnGroup 
 {
 	// Test method belong to preSetupTestA

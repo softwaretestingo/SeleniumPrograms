@@ -23,7 +23,5 @@ public class ClickActions
 		
 		// This Will Close All The Tabs
 		driver.quit();
-
 	}
-
 }

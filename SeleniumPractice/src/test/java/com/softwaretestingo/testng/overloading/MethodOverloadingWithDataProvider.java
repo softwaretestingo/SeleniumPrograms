@@ -23,7 +23,6 @@ public class MethodOverloadingWithDataProvider
 		return new Object[][] {{"SoftwareTestingo",2023}};
 	}
 
-
 	@DataProvider(name="DemoData1")
 	public static Object[][] dataProviderMethod1()
 	{

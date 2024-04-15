@@ -23,9 +23,5 @@ public class CustomXpathWithVariable
 		
 		Thread.sleep(5000);
 		driver.close();
-		
-		
-		
-		
 	}
 }

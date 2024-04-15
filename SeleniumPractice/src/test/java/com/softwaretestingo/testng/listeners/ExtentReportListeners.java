@@ -1,24 +1,18 @@
 package com.softwaretestingo.testng.listeners;
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Calendar;
 import java.util.Date;
-
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class ExtentReportListeners implements ITestListener 
 {
-	
 	//https://github.com/naveenanimation20/March2023POMSeriesFramework/blob/master/src/main/java/com/qa/opencart/listeners/ExtentReportListener.java
 	private static final String OUTPUT_FOLDER = "./reports/";
 	private static final String FILE_NAME = "TestExecutionReport.html";
@@ -26,7 +20,6 @@ public class ExtentReportListeners implements ITestListener
 	private static ExtentReports extent = init();
 	public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
 	private static ExtentReports extentReports;
-
 
 	private static ExtentReports init() 
 	{
@@ -130,7 +123,4 @@ public class ExtentReportListeners implements ITestListener
 		calendar.setTimeInMillis(millis);
 		return calendar.getTime();
 	}
-	
-	
-
 }

@@ -19,6 +19,5 @@ public class InstallAdBlockerInBrowser
 		driver.get("https://www.softwaretestingo.com/");
 		Thread.sleep(3000);
 		driver.quit();
-
 	}
 }

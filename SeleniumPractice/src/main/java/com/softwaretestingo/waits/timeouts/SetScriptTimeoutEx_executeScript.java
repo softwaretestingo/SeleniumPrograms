@@ -14,8 +14,6 @@ public class SetScriptTimeoutEx_executeScript
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.softwaretestingo.com/alerts/");
-		
-		
 		/*
 		 * The default timeout for setScriptTimeout method is zero. If you do not set
 		 * time, then there are chances that executeAsyncScript method may fail because

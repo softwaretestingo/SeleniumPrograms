@@ -7,7 +7,5 @@ public class ImplicitWaitPageLoadTimeout
 	{
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		
-		
 	}
 }

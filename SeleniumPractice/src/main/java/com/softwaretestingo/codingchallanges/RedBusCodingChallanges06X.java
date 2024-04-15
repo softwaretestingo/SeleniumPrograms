@@ -1,11 +1,9 @@
 package com.softwaretestingo.codingchallanges;
-
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,10 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-public class RedBusCodingChallanges06X {
+public class RedBusCodingChallanges06X 
+{
 	static WebDriver driver;
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("--disable-notifications"); //disable notifications
 	    
@@ -26,7 +25,6 @@ public class RedBusCodingChallanges06X {
 		
 		List<String> weekends = getweekends("Jul 2024");//to get Weekends dates
 		System.out.println(weekends);
-
 	}
 	public static List<String> getweekends(String mon)
 	{
@@ -57,7 +55,8 @@ public class RedBusCodingChallanges06X {
 		int n = Integer.parseInt(weekends.get(0)); // to get the first element of list
 		
 		//This logic is to get the todays date. Try and catch is used because it will throw and error when we search for other month except present month
-		try{
+		try
+		{
 			if(driver.findElement(By.cssSelector(".fgdqFw")).isDisplayed())
 		     {
 		       String today = driver.findElement(By.cssSelector(".fgdqFw")).getText();
@@ -71,11 +70,11 @@ public class RedBusCodingChallanges06X {
 		       }
 		     }
 			Collections.sort(weekends); //used to sort the array
-		}catch(NoSuchElementException e)
+		}
+		catch(NoSuchElementException e)
 		{
 			// TODO Auto-generated method stub
 		}
 		return weekends;
 	}
-
 }

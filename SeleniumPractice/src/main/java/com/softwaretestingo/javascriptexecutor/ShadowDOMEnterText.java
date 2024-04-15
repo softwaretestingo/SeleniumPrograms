@@ -12,7 +12,6 @@ public class ShadowDOMEnterText
 		driver.get("https://demo.softwaretestingo.com/wp-content/uploads/2023/08/shadowdom.html");
 		Thread.sleep(5000);
 		
-		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		
 		//Copy The JS Path Of The Element and add Return to return the element

@@ -1,13 +1,8 @@
 package com.softwaretestingo.locator.xpath.functions;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-/**
- * Author SoftwareTestingo.com
- * 
- */
 public class XPathTranslateFunction 
 {
 	/*

@@ -4,7 +4,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 public class SingletonClass 
 {
-
 	@BeforeMethod
 	public void setup()
 	{

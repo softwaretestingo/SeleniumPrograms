@@ -6,7 +6,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 public class ExplicitWait_TitleIs 
 {
-	
 	//Here We Are Checking Full Title
 	public static void main(String[] args) throws InterruptedException 
 	{

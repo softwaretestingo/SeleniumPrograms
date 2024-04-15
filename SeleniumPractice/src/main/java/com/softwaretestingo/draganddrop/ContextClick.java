@@ -1,14 +1,10 @@
 package com.softwaretestingo.draganddrop;
-
-import java.awt.event.ActionEvent;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-
 public class ContextClick 
 {
 	public static void main(String[] args) throws InterruptedException 
@@ -26,7 +22,5 @@ public class ContextClick
 		Thread.sleep(3000);
 		
 		driver.close();	
-		
 	}
-
 }

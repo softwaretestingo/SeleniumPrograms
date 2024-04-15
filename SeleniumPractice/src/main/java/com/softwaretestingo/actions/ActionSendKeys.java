@@ -1,11 +1,9 @@
 package com.softwaretestingo.actions;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-
 public class ActionSendKeys 
 {
 	public static void main(String[] args) throws InterruptedException 
@@ -23,8 +21,5 @@ public class ActionSendKeys
 		act.sendKeys(Keys.TAB).sendKeys("Password").build().perform();
 		Thread.sleep(3000);
 		driver.close();
-		
-
 	}
-
 }

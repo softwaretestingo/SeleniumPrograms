@@ -23,8 +23,6 @@ public class HorizontalScrollUsingActionClass
 		    action.sendKeys(Keys.RIGHT).build().perform();
 		    Thread.sleep(2000);
 		}
-		
-		
 		Thread.sleep(8000);
 		driver.quit();
 	}

@@ -19,7 +19,7 @@ public class UsingRobotClass
 		driver.findElement(By.cssSelector(".btn.btn-success.fileinput-button")).click();
 		driver.switchTo().activeElement();
 		
-		StringSelection ss=new StringSelection("/SeleniumPractice/Resources/SoftwareTestingO.png");
+		StringSelection ss=new StringSelection("C:\\Users\\Freelancer\\git\\seleniumprograms\\SeleniumPractice\\Resources\\SoftwareTestingO.png");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 		Thread.sleep(3000);
 		Robot r=new Robot();

@@ -1,10 +1,8 @@
 package com.softwaretestingo.seleniumexceptions;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 public class InvalidSelectorException1 
 {
 	/**
@@ -25,7 +23,5 @@ public class InvalidSelectorException1
 		textbox.sendKeys("SoftwareTestingo Blog");
 		Thread.sleep(2000);
 		driver.close();
-
 	}
-
 }

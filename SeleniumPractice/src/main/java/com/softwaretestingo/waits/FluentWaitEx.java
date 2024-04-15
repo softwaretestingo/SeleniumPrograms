@@ -32,7 +32,6 @@ public class FluentWaitEx
 		wait.until(ExpectedConditions.presenceOfElementLocated(msgText));
 
 		String msg=driver.findElement(msgText).getText(); System.out.println(msg);
-
 		driver.quit();
 	}
 }

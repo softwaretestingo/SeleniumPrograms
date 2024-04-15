@@ -1,15 +1,12 @@
 package com.softwaretestingo.robotclass;
-
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
-
 public class PasteInNotepad 
 {
-
 	public static void main(String[] args) throws IOException, InterruptedException, AWTException 
 	{
 		Runtime.getRuntime().exec("notepad");

@@ -15,7 +15,6 @@ public class ExplicitWait_VisibilityOfElementLocated
 		driver.get("https://demo.softwaretestingo.com/text-box/");
 		
 		By fullNameId=By.id("userName");
-
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		//Select ExpectedConditions Class
 		//Checking Wheather The Element is Visible and Present In the DOM Means Height & Weight Greater Then 0

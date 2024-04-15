@@ -1,10 +1,8 @@
 package com.softwaretestingo.switchto.windows;
-
 import java.util.ArrayList;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 public class MultipleWindowHandle 
 {
 	public static void main(String[] args) throws InterruptedException 
@@ -33,5 +31,4 @@ public class MultipleWindowHandle
 		driver.switchTo().window(windowIDs.get(0)).close();
 		driver.quit();
 	}
-
 }

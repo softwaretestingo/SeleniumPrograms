@@ -1,6 +1,4 @@
 package com.softwaretestingo.waits.timeouts;
-import java.time.Duration;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

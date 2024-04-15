@@ -1,10 +1,8 @@
 package com.softwaretestingo.shadowdom;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 public class ShadowDOMEnterText 
 {
 	//parent URL: http://watir.com/examples/shadow_dom.html
@@ -14,7 +12,6 @@ public class ShadowDOMEnterText
 		driver.manage().window().maximize();
 		driver.get("https://demo.softwaretestingo.com/wp-content/uploads/2023/08/shadowdom.html");
 		Thread.sleep(5000);
-		
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		

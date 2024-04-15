@@ -16,18 +16,14 @@ public class ExplicitWait_presenceOfAllElementsLocatedBy
 		driver.get("https://demo.softwaretestingo.com/");
 		
 		By elements=By.xpath("//h5[contains(text(),'Elements')]/following-sibling::*/a");
-		
 		WebDriverWait waits=new WebDriverWait(driver, Duration.ofSeconds(20));
 		List<WebElement> AllElements = waits.until(ExpectedConditions.presenceOfAllElementsLocatedBy(elements));
 		
 		System.out.println("Size Of the Elements: "+AllElements.size());
-		
 		for(int i=0;i<AllElements.size();i++)
 		{
 			System.out.println(AllElements.get(i).getText());
 		}
-		
 		driver.close();
-
 	}
 }

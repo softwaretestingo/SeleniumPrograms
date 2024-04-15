@@ -14,7 +14,6 @@ public class ScrollToElementSwitchToFrame
 		driver.get("https://demo.softwaretestingo.com/wp-content/uploads/2023/11/frame_with_nested_scrolling_frame_out_of_view.html");
 		Thread.sleep(2000);
 
-
 		WebElement iframe = driver.findElement(By.tagName("iframe"));
 		WheelInput.ScrollOrigin scrollOrigin = WheelInput.ScrollOrigin.fromElement(iframe);
 		new Actions(driver)
