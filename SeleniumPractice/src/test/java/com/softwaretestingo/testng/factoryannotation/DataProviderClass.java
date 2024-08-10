@@ -13,7 +13,11 @@ public class DataProviderClass
 	@DataProvider
 	public Object[][] message()
 	{
-		return new Object [][]{{"Manas", new Integer (123)}, {"Manoj", new Integer (456)}};
+		return new Object [][]
+		{
+			{"Manas", new Integer (123)}, 
+			{"Manoj", new Integer (456)}
+		};
 	}
 
 	@Test (dataProvider="message")

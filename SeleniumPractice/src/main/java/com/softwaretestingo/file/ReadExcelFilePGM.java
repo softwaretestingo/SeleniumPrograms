@@ -6,7 +6,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class ReadExcelFilePGM 
 {
-	public static final String FILE_PATH="D:\\Workspace\\Automation\\SeleniumPractice\\Resources\\ReadExcelFile.xlsx";
+	public static final String FILE_PATH="C:\\Users\\10745824\\git\\SeleniumPrograms\\SeleniumPractice\\Resources\\ReadExcelFile.xlsx";
 	public static Workbook wb;
 	public static org.apache.poi.ss.usermodel.Sheet sh;
 	public static void main(String[] args) throws EncryptedDocumentException, IOException 
