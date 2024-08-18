@@ -5,7 +5,7 @@ public class PriorityAttributeExample2
 	@Test(priority=-1)
 	public void M1withPriority()
 	{
-		System.out.println("M1withPriority");
+		System.out.println("Priority With Minus Value");
 	}
 
 	// TestNG will assign priority as zero to this method
@@ -31,6 +31,6 @@ public class PriorityAttributeExample2
 	@Test(priority=1)
 	public void M4withPriority()
 	{
-		System.out.println("M4withPriority");
+		System.out.println("Priority With Positive Value");
 	}
 }

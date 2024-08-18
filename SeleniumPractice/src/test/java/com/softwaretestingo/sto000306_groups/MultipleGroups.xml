@@ -6,12 +6,12 @@
 			<run>
 				<include name="G1" />
 				<include name="G2" />
-				<exclude name="G3" />
+				<include name="G3" />
 			</run>
 		</groups>
 		<classes>
 			<class
-				name="com.softwaretestingo.testng.groups.MultipleGroups" />
+				name="com.softwaretestingo.sto000306_groups.MultipleGroups" />
 		</classes>
 	</test> <!--
 	Test -->

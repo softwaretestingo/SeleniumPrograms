@@ -1,7 +1,12 @@
 package com.softwaretestingo.sto000314_dependsongroups;
 import org.testng.annotations.Test;
-public class RegularExpressionsInDependsOnGroups 
+public class DependsOnGroupsWithPriority 
 {
+	/**
+	 * If You Want your Tests Should Execute in Certain Order
+	 * Then You have to mention the Priority
+	 */
+	
 	// Test belong to Group registration
 	@Test(groups = "registration", priority= 1)
 	public void signUp()

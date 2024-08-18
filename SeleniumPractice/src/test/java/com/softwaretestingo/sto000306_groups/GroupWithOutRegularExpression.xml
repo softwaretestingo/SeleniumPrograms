@@ -10,8 +10,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class
-				name="com.softwaretestingo.testng.groups.GroupWithRegularExpression" />
+			<class name="com.softwaretestingo.sto000306_groups.GroupWithRegularExpression" />
 		</classes>
 	</test> <!--
 	Test -->

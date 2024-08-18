@@ -5,14 +5,14 @@ public class PriorityAttributeExample3
 	@Test(priority=1)
 	public void M1withPriority()
 	{
-		System.out.println("M1withPriority");
+		System.out.println("Priority 1 Executed");
 	}
 
 	// TestNG will assign priority as zero to this method
 	@Test(priority=3)
 	public void DuplicatePriorityMethod1()
 	{
-		System.out.println("DuplicatePriorityMethod1");
+		System.out.println("Duplicate Priority Method 1 Executed");
 	}
 
 	/*
@@ -26,12 +26,12 @@ public class PriorityAttributeExample3
 	@Test(priority=3)
 	public void DuplicatePriorityMethod2()
 	{
-		System.out.println("DuplicatePriorityMethod2");
+		System.out.println("Duplicate Priority Method 2 Executed");
 	}
 
 	@Test(priority=2)
 	public void M4withPriority()
 	{
-		System.out.println("M4withPriority");
+		System.out.println("Priority 2 Executed");
 	}
 }

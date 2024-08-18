@@ -6,14 +6,11 @@
 			<run>
 				<include name="G1" />
 				<include name="G2" />
-				<include name="G3" />
+				<exclude name="G3" /> <!-- G3 Grouos Will not Execute -->
 			</run>
 		</groups>
 		<classes>
-			<class
-				name="com.softwaretestingo.testng.groups.MultipleGroups" />
+			<class name="com.softwaretestingo.sto000306_groups.MultipleGroups" />
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test>
+</suite>

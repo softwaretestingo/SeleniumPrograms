@@ -9,7 +9,7 @@
 		</groups>
 		<classes>
 			<class
-				name="com.softwaretestingo.testng.groups.RunAllMethodsWithoutUsingGroupName" />
+				name="com.softwaretestingo.sto000306_groups.RunAllMethodsWithoutUsingGroupName" />
 		</classes>
 	</test> <!--
 	Test -->

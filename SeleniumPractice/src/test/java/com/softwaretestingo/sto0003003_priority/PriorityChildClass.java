@@ -5,24 +5,24 @@ public class PriorityChildClass extends PrioritySuperClass
 	@Test
 	public void PrintMethod() 
 	{
-		System.out.println("Capital P method");
+		System.out.println("Subclass: Capital P method");
 	}
 
 	@Test
 	public void printMethod()
 	{
-		System.out.println("Small P method");
+		System.out.println("Subclass: Small P method");
 	}
 
 	@Test
 	public void _Method() 
 	{
-		System.out.println("Underscore method");
+		System.out.println("Subclass: Underscore method");
 	}
 
 	@Test
 	public void $Method() 
 	{
-		System.out.println("Dollar method");
+		System.out.println("Subclass: Dollar method");
 	}
 }

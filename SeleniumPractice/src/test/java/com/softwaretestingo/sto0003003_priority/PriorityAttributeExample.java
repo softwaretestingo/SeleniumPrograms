@@ -21,11 +21,16 @@ public class PriorityAttributeExample
 	{
 		System.out.println("Positive Priority");
 	}
-
-	// It is not mandatory to pass priority in a order
-	@Test(priority = 100)
+	// When you Not Define any Priority
+	@Test()
 	public void SkippedPriority() 
 	{
 		System.out.println("Skipped Priority");
+	}
+	// It is not mandatory to pass priority in a order
+	@Test(priority=34)
+	public void RandomPriority() 
+	{
+		System.out.println("Random Priority");
 	}
 }
