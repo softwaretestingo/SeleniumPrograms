@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="G1" />
+				<include name="G2" />
+				<exclude name="G3" /> <!-- G3 Grouos Will not Execute -->
+			</run>
+		</groups>
+		<classes>
+			<class name="com.softwaretestingo.sto000306_groups.MultipleGroups" />
+		</classes>
+	</test>
+</suite>
