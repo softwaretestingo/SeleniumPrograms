@@ -10,6 +10,7 @@ public class DataProviderClass
 		System.out.println("Before class executed");
 	}
 
+	@SuppressWarnings("removal")
 	@DataProvider
 	public Object[][] message()
 	{

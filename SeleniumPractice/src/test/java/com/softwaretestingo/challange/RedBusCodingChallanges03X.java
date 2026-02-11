@@ -22,7 +22,7 @@ public class RedBusCodingChallanges03X
     //Locators
     private static final By OPEN_CALENDAR_BUTTON = By.cssSelector("#onwardCal");
     private static final By CALENDAR_WIDGET = By.cssSelector(".sc-jzJRlG.dPBSOp");
-    private static final By LEFT_ARROW = By.cssSelector(".DayNavigator__IconBlock-qj8jdz-2.iZpveD:nth-child(1)");
+    //private static final By LEFT_ARROW = By.cssSelector(".DayNavigator__IconBlock-qj8jdz-2.iZpveD:nth-child(1)");
     private static final By RIGHT_ARROW = By.cssSelector(".DayNavigator__IconBlock-qj8jdz-2.iZpveD:nth-child(3)");
     private static final By MONTH_YEAR = By.cssSelector(".DayNavigator__IconBlock-qj8jdz-2.iZpveD:nth-child(2)");
     private static final By HOLIDAY_COUNT = By.cssSelector(".DayNavigator__IconBlock-qj8jdz-2.iZpveD:nth-child(2)>div");

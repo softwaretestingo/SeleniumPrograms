@@ -5,7 +5,7 @@
 		<version>3.0.0-M5</version>
 		<configuration>
 			<suiteXmIFiles>
-				<suitemiFile>src/test/resources/testng.xml</suiteXmiFile>
+				<suiteXmiFile>src/test/resources/testng.xml</suiteXmiFile>
 			</suiteXmIFiles>
 		</configuration>
 	</plugin>

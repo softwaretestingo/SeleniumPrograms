@@ -3,6 +3,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.Test;
 public class ExpectedExceptionsEx3 
 {
+	@SuppressWarnings("unused")
 	@Test(expectedExceptions = {NullPointerException.class,NoSuchElementException.class,ArithmeticException.class})
 	public void testException() 
 	{

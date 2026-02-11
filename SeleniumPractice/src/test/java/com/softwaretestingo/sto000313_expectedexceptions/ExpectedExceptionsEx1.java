@@ -2,6 +2,7 @@ package com.softwaretestingo.sto000313_expectedexceptions;
 import org.testng.annotations.Test;
 public class ExpectedExceptionsEx1 
 {
+	@SuppressWarnings("null")
 	@Test(expectedExceptions = {ArithmeticException.class})
 	public void testException() 
 	{

@@ -39,7 +39,7 @@ public class TestBase
 	   }
 	   public static void close()
 	   {
-	      driver.close();
+	      driver.quit();
 	      driver=null;  // we destroy the driver object after quit operation
 	   }   
 	   public  static void openurl(String URL)
